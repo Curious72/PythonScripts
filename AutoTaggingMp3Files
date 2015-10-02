@@ -1,7 +1,7 @@
 import os
 import eyeD3
 
-path= '/home/coolsduy/trying'
+path= '/home/coolsduy/trying' #directory in which ur mp3 files are
 
 f= os.listdir(path)
 
