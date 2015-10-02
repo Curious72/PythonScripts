@@ -1,0 +1,16 @@
+import os
+import eyeD3
+
+path= '/home/coolsduy/trying'
+
+f= os.listdir(path)
+
+for file in f:
+		if(file.endswith(".mp3")):
+			tag=eyeD3.Tag()
+			tag.link(file)
+			str=tag.getTitle()
+			
+			if(str.endswith(".mp3")==False):
+				str=str+".mp3"
+			os.rename(file,str)
